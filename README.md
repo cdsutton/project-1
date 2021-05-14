@@ -31,6 +31,6 @@ To-do list:
 
 ## Usage
 
-> Run MainACB(1) Java Application in SpringToolSuite4
-> Go to localhost:7009
-> Enjoy!
+>* Run MainACB(1) Java Application in SpringToolSuite4
+* Go to localhost:7009
+* Enjoy!
