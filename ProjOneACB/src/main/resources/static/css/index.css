@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+/* CSS Reset, so we are switching all of the default margins, padding to 0 */
+/* box-sizing: border-box??? */
+/* In CSS, we have the box model, which is composed of the content, the padding,
+the border, and the margin */
+/* By setting box-sizing to border-box, we are not including padding as part of 
+the width or height attributes, so that we can be really consistent with width + height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Navbar */
+@media only screen and (max-width: 679px) {
+    #navbar {
+        background-color: rgb(255, 0, 0);
+        overflow: auto;
+        height: 50px;
+        padding-top: 15px;
+    }
+    
+    #navbar a {
+        color: rgb(0, 0, 0);
+    }
+    
+    #navbar a:hover {
+        color: #ffffff;
+    }
+    
+    .logo {
+        color: #fff;
+    }
+    
+    #navbar h1 {
+        float: left;
+        padding-top: 0px;
+    }
+    
+    #navbar ul {
+        list-style: none;
+        float: right;
+    }
+    
+    #navbar ul li {
+        display: inline-block;
+        padding: 0px;
+        background-color: rgb(255, 255, 0);
+    }
+    
+    #navbar ul li:hover {
+        background-color: rgb(230, 148, 16);
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    #navbar {
+        background: rgb(255, 0, 0);
+        overflow: auto;
+    }
+    
+    #navbar a {
+        color: rgb(0, 0, 0);
+    }
+    
+    #navbar a:hover {
+        color: #ffffff;
+    }
+    
+    .logo {
+        color: rgb(0, 0, 0);
+    }
+    
+    #navbar h1 {
+        float: left;
+        padding-top: 20px;
+    }
+    
+    #navbar ul {
+        list-style: none;
+        float: right;
+    }
+    
+    #navbar ul li {
+        display: inline-block;
+        padding: 20px;
+        background-color: rgb(255, 255, 0);
+    }
+    
+    #navbar ul li:hover {
+        background-color: darkred;
+    }
+    
+}

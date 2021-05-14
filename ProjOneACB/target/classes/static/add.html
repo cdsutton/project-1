@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Agent Cody's Bank</title>
+
+<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+    <style>
+	input[type=text], select {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	}
+
+      body {
+    	font-family: 'Bungee Shade';font-size: 20px;
+    	background-color: rgb(255, 255, 255);
+    	margin: 20px;
+	  }
+      
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* Navbar */
+	@media only screen and (max-width: 679px) {
+    #navbar {
+		border: 5px solid black;
+        border-radius: 5px;
+        background: rgb(255, 0, 0);
+        overflow: auto;
+    }
+    
+    #navbar a {
+        color: rgb(0, 0, 0);
+    }
+    
+    #navbar a:hover {
+        color: #ffffff;
+    }
+    
+    .logo {
+        padding: 5px;
+        margin: 35px;
+        border: 5px solid black;
+        border-style: double;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 0);
+    }
+    
+    #navbar h1 {
+        float: left;
+        padding-top: 0px;
+    }
+    
+    #navbar ul {
+        list-style: none;
+        float: right;
+    }
+    
+   #navbar ul li {
+        display: inline-block;
+        padding: 10px;
+        margin: 20px;
+        border: 5px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 0);
+    }
+    
+    #navbar ul li:hover {
+        background-color: darkred;
+    }
+    
+    .button {
+	  background-color: rgb(255, 255, 0);
+	  border: 5px solid black;
+	  border-radius: 5px;
+	  color: rgb(0, 0, 0);
+	  padding: 0px 15px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-family: 'Bungee';
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+	.button:hover {
+        color: #ffffff;
+        background-color: darkred;
+    }
+    
+    .form-control {
+	  background-color: rgb(255, 255, 0);
+	  border: 5px solid black;
+	  border-radius: 5px;
+	  color: rgb(0, 0, 0);
+	  padding: 0px 15px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-family: 'Bungee';
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+	.form-control:hover {
+        color: #ffffff;
+        background-color: darkred;
+    }
+    
+}
+
+	@media only screen and (min-width: 680px) {
+    #navbar {
+		border: 5px solid black;
+        border-radius: 5px;
+        background: rgb(255, 0, 0);
+        overflow: auto;
+    }
+    
+    #navbar a {
+        color: rgb(0, 0, 0);
+    }
+    
+    #navbar a:hover {
+        color: #ffffff;
+    }
+    
+    .logo {
+        padding: 5px;
+        margin: 35px;
+        border: 5px solid black;
+        border-style: double;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 0);
+    }
+    
+    #navbar h1 {
+        float: left;
+        padding-top: 20px;
+    }
+    
+    #navbar ul {
+        list-style: none;
+        float: right;
+    }
+    
+    #navbar ul li {
+        display: inline-block;
+        padding: 10px;
+        margin: 20px;
+        border: 5px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 0);
+    }
+    
+    #navbar ul li:hover {
+        background-color: darkred;
+    }
+    
+    .button {
+	  background-color: rgb(255, 255, 0);
+	  border: 5px solid black;
+	  border-radius: 5px;
+	  color: rgb(0, 0, 0);
+	  padding: 0px 15px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-family: 'Bungee';
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+	.button:hover {
+        color: #ffffff;
+        background-color: darkred;
+    }
+    
+    .form-control {
+	  background-color: rgb(255, 255, 0);
+	  border: 5px solid black;
+	  border-radius: 5px;
+	  color: rgb(0, 0, 0);
+	  padding: 0px 15px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-family: 'Bungee';
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+	.form-control:hover {
+        color: #ffffff;
+        background-color: darkred;
+    }
+    
+}
+    </style>
+  </head>
+  <body class="text-center">
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo" style="padding: 5px;">AGENT CODY'S BANK</h1>
+                <ul>
+                    <li><a href="landing.html" style="font-family: 'Bungee';font-size: 22px;">Home</a></li>
+                    <li><a href="view.html" style="font-family: 'Bungee';font-size: 22px;">Reimbursements</a></li>
+                    <li><a href="logout.html" style="font-family: 'Bungee';font-size: 22px;">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main class="form-signin" style="font-family: 'Bungee Shade';font-size: 22px;text-align: center;">
+  <h1 class="h3 mb-3 fw-normal">Add a Reimbursement!</h1>
+<!-- <form id="form">
+    <div class="row">
+      <label for="amountInput" class="col-sm-2 col-form-label">Amount Requested:</label>
+      <div class="col-sm-6">
+        <input id="amountInput" class="form-control" type="number">
+      </div>
+    </div>
+    
+    <div class="row">
+      <label for="typeInput" class="col-sm-2 col-form-label">Type:</label>
+      <div class="col-sm-6">
+        <select id="typeInput" class="form-select">
+          <option id="lodgingSelected" selected>LODGING</option>
+          <option id="travelSelected">TRAVEL</option>
+          <option id="foodSelected">FOOD</option>
+          <option id="otherSelected">OTHER</option>
+      </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <label for="descriptionInput" class="col-sm-2 col-form-label">Description:</label>
+      <div class="col-sm-6">
+        <textarea id="descriptionInput" class="form-control"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <label for="receiptInput" class="col-sm-2 col-form-label">Upload receipt:</label>
+      <div class="col-sm-6">
+        <input id="receiptInput" type="file" class="form-control">
+      </div>
+    </div>
+
+    <button id="submitReimb" class="btn btn-primary">Create Request</button>
+</form> -->
+
+<form>	
+<div style="border-radius: 5px;background-color: #f2f2f2;padding: 20px;">
+  <form action="/action_page.php">
+    <label for="amount" style="font-family: 'Bungee';font-size: 22px;">Amount</label>
+    <input type="text" id="amount" name="amount" placeholder="Enter an amount...(Ex. 100)">
+
+    <label for="Description" style="font-family: 'Bungee';font-size: 22px;">Description</label>
+    <input type="text" id="description" name="description" placeholder="What is this ticket for? (Ex. Needed to relocate)">
+
+    <label for="Type" style="font-family: 'Bungee';font-size: 22px;">Type</label>
+    <select id="type" name="type">
+      <option value="lodging">LODGING</option>
+      <option value="travel">TRAVEL</option>
+      <option value="food">FOOD</option>
+      <option value="other">OTHER</option>
+    </select>
+  	
+  	<label for="receiptInput" class="col-sm-2 col-form-label" style="font-family: 'Bungee';font-size: 22px;">Receipt</label>
+  	<input id="receiptInput" type="file" class="form-control">
+  	
+    <button id="submitReimb" class="button">Submit!</button>
+  </form>
+</div>
+  </form>
+<p class="mt-5 mb-3 text-muted" style="font-family: 'Bungee';font-size: 22px;">&copy; 2021 * Powered by Bootstrap Bill<img src="https://pbs.twimg.com/profile_images/1238582163462934530/21bCIhYQ.jpg" class="img-circle" alt="Bootstrap Bill" style="display:inline-block;width:2%;padding-left: 5px;"></p>
+  <script src="js/add.js"></script>
+</main>
+
+
+  </body>
+</html>
